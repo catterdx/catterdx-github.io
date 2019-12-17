@@ -1,0 +1,57 @@
+/*p,li,h1{
+	color: red;
+	width: 500px;
+	border: 1px solid black;
+}*/
+/*a:hover{
+	color: green;
+	
+}*/
+html {
+	/* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+	font-size: 10px; 
+	/* Google fonts 输出的 CSS */
+	font-family: 'Noto Sans SC', sans-serif;
+	background-color: #00539F;
+}
+body {
+	width: 600px;
+	margin:0 auto;
+	background-color: #FF9500;
+	padding: 0 20px 20px 20px;
+	border: 5px solid black;
+}
+h1{
+	font-size: 60px;
+	margin: 0;
+	padding: 20px 0;    
+	color: #00539F;
+	text-shadow: 6px 6px 6px black;
+	text-align: center;
+}
+img {
+	display: block;
+	margin: 0 auto;
+}
+p,li{
+	font-size: 15px;
+	line-height:1.5;
+	letter-spacing:1px;
+	color:gray;
+}
+a:hover{
+	color: gray;
+	
+}
+a.dingding{
+	color:green;
+}
+a.mywebsite { 
+	text-decoration: none;
+	color: red;
+	display: block;
+	text-align: center
+	}	
+a.mywebsite:hover{ 
+	text-decoration:underline;
+} 
