@@ -40,18 +40,226 @@ p,li{
 	color:gray;
 }
 a:hover{
-	color: gray;
+	color: gray;	
+}
 	
-}
-a.dingding{
-	color:green;
-}
-a.mywebsite { 
-	text-decoration: none;
-	color: red;
-	display: block;
-	text-align: center
-	}	
-a.mywebsite:hover{ 
+a.mywebsite:hover,a.dingding:hover{ 
 	text-decoration:underline;
 } 
+/*a.dingding{ 
+    	display: inline-block;
+    	font-size: 20px;
+    	margin: 10px;
+    	background: linear-gradient(left, #f71605, #e0f513); 
+        background: -webkit-linear-gradient(left, #f71605, #e0f513);
+        background: -o-linear-gradient(right, #f71605, #e0f513);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation:scratchy 0.253s linear forwards infinite;
+	    -webkit-animation:scratchy 0.253s linear forwards infinite;
+	    -moz-animation: scratchy 0.253s linear forwards infinite;
+	    -ms-animation: scratchy 0.253s linear forwards infinite;
+	    -o-animation: scratchy 0.253s linear forwards infinite;
+    }  
+   @keyframes  scratchy {
+		0% {
+			background-position: 0 0;
+		}
+		25% {
+			background-position: 0 0;
+		}
+		26% {
+			background-position: 20px -20px;
+		}
+		50% {
+			background-position: 20px -20px;
+		}
+		51% {
+			background-position: 40px -40px;
+		}
+		75% {
+			background-position: 40px -40px;
+		}
+		76% {
+			background-position: 60px -60px;
+		}
+		99% {
+			background-position: 60px -60px;
+		}
+		100% {
+			background-position: 0 0;
+		}
+	}
+	
+	@-webkit-keyframes scratchy {
+	    0% {
+			background-position: 0 0;
+		}
+		25% {
+			background-position: 0 0;
+		}
+		26% {
+			background-position: 20px -20px;
+		}
+		50% {
+			background-position: 20px -20px;
+		}
+		51% {
+			background-position: 40px -40px;
+		}
+		75% {
+			background-position: 40px -40px;
+		}
+		76% {
+			background-position: 60px -60px;
+		}
+		99% {
+			background-position: 60px -60px;
+		}
+		100% {
+			background-position: 0 0;
+		}
+	}
+	@-moz-keyframes scratchy {
+	    0% {
+			background-position: 0 0;
+		}
+		25% {
+			background-position: 0 0;
+		}
+		26% {
+			background-position: 20px -20px;
+		}
+		50% {
+			background-position: 20px -20px;
+		}
+		51% {
+			background-position: 40px -40px;
+		}
+		75% {
+			background-position: 40px -40px;
+		}
+		76% {
+			background-position: 60px -60px;
+		}
+		99% {
+			background-position: 60px -60px;
+		}
+		100% {
+			background-position: 0 0;
+		}
+	}
+	@-ms-keyframes scratchy {
+	   0% {
+			background-position: 0 0;
+		}
+		25% {
+			background-position: 0 0;
+		}
+		26% {
+			background-position: 20px -20px;
+		}
+		50% {
+			background-position: 20px -20px;
+		}
+		51% {
+			background-position: 40px -40px;
+		}
+		75% {
+			background-position: 40px -40px;
+		}
+		76% {
+			background-position: 60px -60px;
+		}
+		99% {
+			background-position: 60px -60px;
+		}
+		100% {
+			background-position: 0 0;
+		}
+	}
+	@-o-keyframes scratchy {
+	   0% {
+			background-position: 0 0;
+		}
+		25% {
+			background-position: 0 0;
+		}
+		26% {
+			background-position: 20px -20px;
+		}
+		50% {
+			background-position: 20px -20px;
+		}
+		51% {
+			background-position: 40px -40px;
+		}
+		75% {
+			background-position: 40px -40px;
+		}
+		76% {
+			background-position: 60px -60px;
+		}
+		99% {
+			background-position: 60px -60px;
+		}
+		100% {
+			background-position: 0 0;
+		}
+	}*/
+
+	a.dingding{ 
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		font-size: 20px; 
+    	color:blue; 
+    	margin:10px;
+		text-align: center;
+    	animation: changeshadow 1s  ease-in  infinite ;
+    	/* 其它浏览器兼容性前缀 */
+	    -webkit-animation: changeshadow 1s linear infinite;
+	    -moz-animation: changeshadow 1s linear infinite;
+	    -ms-animation: changeshadow 1s linear infinite;
+	    -o-animation: changeshadow 1s linear infinite;
+    }  
+    @keyframes changeshadow {  
+        0%{ text-shadow: 0 0 4px green}  
+        50%{ text-shadow: 0 0 40px green}  
+        100%{ text-shadow: 0 0 4px green}  
+    }
+    /* 添加兼容性前缀 */
+	@-webkit-keyframes changeshadow {
+	  0%{ text-shadow: 0 0 4px green}  
+          50%{ text-shadow: 0 0 40px green}  
+          100%{ text-shadow: 0 0 4px green}  
+	}
+	@-moz-keyframes changeshadow {
+	    0%{ text-shadow: 0 0 4px green}  
+            50%{ text-shadow: 0 0 40px green}  
+            100%{ text-shadow: 0 0 4px green}  
+	}
+	@-ms-keyframes changeshadow {
+	    0%{ text-shadow: 0 0 4px green}  
+            50%{ text-shadow: 0 0 40px green}  
+            100%{ text-shadow: 0 0 4px green}  
+	}
+	@-o-keyframes changeshadow {
+	    0%{ text-shadow: 0 0 4px green}  
+            50%{ text-shadow: 0 0 40px green}  
+            100%{ text-shadow: 0 0 4px green}  
+	}
+	a.mywebsite{ 
+		text-decoration: none;
+		display: block;
+		text-align: center;
+    	font-size: 20px; 
+    	color:red; 
+    	margin:10px 0 15px 0;
+    	animation: changeshadow 1s  ease-in  infinite ;
+    	/* 其它浏览器兼容性前缀 */
+	    -webkit-animation: changeshadow 1s linear infinite;
+	    -moz-animation: changeshadow 1s linear infinite;
+	    -ms-animation: changeshadow 1s linear infinite;
+	    -o-animation: changeshadow 1s linear infinite;
+    }  
