@@ -21,7 +21,7 @@ function setUserName() {
   myTitle.textContent = '欢迎' + myName +'!';
   }
 }
-if(!localStorage.getItem('name')) {
+/* if(!localStorage.getItem('name')) { */
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
