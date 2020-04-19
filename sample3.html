@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>MDN PIC TEST</title>
+ <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet" type="test/css">
+  <style>
+	html {
+        font-family: 'Noto Sans SC', sans-serif;
+        background: url("mdntest/pattern.png");
+    }
+
+	body {
+		width:100%;
+		max-width: 1200px;
+		margin:0 auto;
+		background-color: white;
+		position:relative;
+	}
+	header {
+		height: 150px;
+	}
+	header img {
+		width: 100px;
+		position: absolute;
+		right: 32.5px;
+		top: 32.5px;
+	}
+	h1{
+		font-size: 50px;
+		line-height: 140px;
+		margin: 0 0 0 32.5px;
+	}
+	main {
+		background: #ccc;
+	}
+	article {
+		padding: 20px;
+	}
+	h2 {
+		margin-top: 0;
+	}
+	p{
+		line-height: 2;
+	}
+	iframe {
+		float: left;
+		margin: 0 20px 20px 0;
+		max-width: 100%;
+	}
+    .bobo {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+	.bobo a {
+		width: 25%;
+		display: block;
+		float: left;
+	}
+	.bobo img {
+		max-width: 100%;
+	}
+	.clearfix {
+		clear: both;
+	}
+	.red-panda img {
+		display: block;
+		max-width: 100%;
+	}
+  </style>
+ </head> 
+ <body>
+	<header>
+		<h1>MDN PIC TEST</h1>
+		<img src="mdntest\firefox-logo120.png" alt="fixfox-logo120.png">
+	</header>
+	<main>
+		<article>
+			<iframe width="400" height="285" src="https://www.youtube.com/embed/AgHxz359MFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h2>这是一个测试的页面</h2>
+			<p>主要是根据MDN的指导，编写一个页面，根据样式表与自相应来排版显示效果。</p>
+			<p>在 header元素中添加一个 img 元素，嵌入一个小尺寸版本的火狐图标。</p>
+			<p>就在 article 元素中（开放标签下面），嵌入一个YouTube视频，使用合适YouTube工具来生成所需的代码。视频的宽度是 400px，高度是 235px。</p>
+			<p>为 further info 的链接添加响应式图片</p>
+			<p>一个艺术方向性的红色熊猫</p>
+		</article>
+		<div class="bobo">
+			 <a href="https://www.mozilla.org/">
+			 <img srcset="mdntest/firefox-logo120.png 120w,mdntest/firefox-logo400.png 400w"
+			      sizes="(max-width:500px) 120px,400px"
+				  src="mdntest/firefox-logo400.png" alt="xxx">
+			</a>
+			<a href="https://www.mozilla.org/">
+			 <img srcset="mdntest/mozilla-dinosaur120.png 120w,mdntest/mozilla-dinosaur400.png 400w"
+				  sizes="(max-width: 500px) 120px,400px"
+                  src="mdntest/mozilla-dinosaur400.png" alt="Learn more about Mozilla">
+			</a>
+			<a href="https://addons.mozilla.org/">
+			 <img srcset="mdntest/firefox-addons120.jpg 120w,mdntest/firefox-addons400.jpg 400w"
+				   sizes="(max-width: 500px) 120px,400px"
+                   src="mdntest/firefox-addons400.jpg" alt="Customize Firefox with add-ons">
+			</a>
+			<a href="https://developer.mozilla.org/en-US/">
+			 <img src="mdntest/mdn.svg" alt="Learn web development with MDN">
+			</a>
+		<div class="clearfix"></div>
+		</div>
+		<div class="red-panda">
+			<picture>
+				<source media="(max-width: 600px)" srcset="mdntest/red-panda-portrait-small.jpg">
+				<img src="mdntest/red-panda-landscape.jpg" alt="a red panda">
+            </picture>
+		</div>
+	</main>
+ </body>
+</html>
